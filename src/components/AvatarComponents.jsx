@@ -36,6 +36,7 @@ const AvatarComponents = ({ setAvatar }) => {
 
             <ExpandMore
               sx={{ bgcolor: "#eee", borderRadius: "50%" }}
+              className={`${click ? "rotate-[180deg]" : "rotate-[0]"}`}
               //   style={{}}
             />
             {/* </IconButton> */}

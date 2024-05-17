@@ -8,7 +8,7 @@ const App = () => {
       <div className="">
         <Header />
       </div>
-      <div className="w-full h-[88.8vh] flex justify-center items-center">
+      <div className="w-full h-[89vh] flex justify-center items-center">
         <Home />
       </div>
     </div>
