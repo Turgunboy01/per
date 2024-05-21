@@ -1,16 +1,10 @@
 import React from "react";
-import Home from "./pages/home/Home";
-import Header from "./components/Header";
+import Home from "./page/home/Home";
 
 const App = () => {
   return (
-    <div className="bg-[url('https://shorturl.at/YZBhZ')] bg-no-repeat bg-cover">
-      <div className="">
-        <Header />
-      </div>
-      <div className="w-full h-[89vh] flex justify-center items-center">
-        <Home />
-      </div>
+    <div>
+      <Home />
     </div>
   );
 };
