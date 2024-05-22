@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { PiDownloadSimpleBold } from "react-icons/pi";
+import { ThemeContext } from "../context/ThemeContext";
 
-const Contact = ({ clickMoon }) => {
+const Contact = () => {
+  const { clickMoon } = useContext(ThemeContext);
   return (
     <div className="flex">
       <div className="border-r w-[70%]  ">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Leader1,
   Leader2,
@@ -8,8 +8,10 @@ import {
   Leader6,
   Leader7,
 } from "../../public/Svg";
+import { ThemeContext } from "../context/ThemeContext";
 
-const VentionImg = ({ clickMoon }) => {
+const VentionImg = () => {
+  const { clickMoon } = useContext(ThemeContext);
   return (
     <div className="border-b p-[30px]">
       <div className="flex justify-between items-center">

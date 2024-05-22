@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
-const KeyState = ({ clickMoon }) => {
+const KeyState = () => {
+  const { clickMoon } = useContext(ThemeContext);
   return (
     <div>
       <div className="pt-[150px] border-b pb-[70px] px-[30px]">

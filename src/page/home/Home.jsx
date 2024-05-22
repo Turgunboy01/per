@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 import Header from "../../components/Header";
 import KeyState from "../../components/KeyState";
 import Expertise from "../../components/Expertise";
@@ -26,12 +26,14 @@ import {
   Best9,
 } from "../../../public/Svg";
 import Marquee from "react-fast-marquee";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Home = () => {
-  const [clickMoon, setClickMoon] = useState(false);
+  const { clickMoon, setClickMoon } = useContext(ThemeContext);
+
   return (
     <div className={`${clickMoon ? "bg-[#29292b]" : "bg-[#fff]"}`}>
-      <Header clickMoon={clickMoon} />
+      <Header />
       <div className="pt-[80px]">
         <div
           onClick={() => setClickMoon(!clickMoon)}
@@ -47,7 +49,7 @@ const Home = () => {
         </div>
         <div className="border-t">
           <div className="w-[90%] border-l ml-auto">
-            <KeyState clickMoon={clickMoon} />
+            <KeyState />
             <div className="border-b py-[30px] w-full">
               <Marquee>
                 <div className=" flex items-center gap-[150px]">
@@ -118,7 +120,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <Expertise clickMoon={clickMoon} />
+            <Expertise />
             {/* slider */}
             <Slider />
             <div className="flex justify-end p-[90px]  pt-[150px]  border-b items-end">
@@ -225,9 +227,9 @@ const Home = () => {
                 companies by the industry’s most respected institutions.
               </p>
             </div>
-            <VentionImg clickMoon={clickMoon} />
+            <VentionImg />
             <div className="border-b  ">
-              <Contact clickMoon={clickMoon} />
+              <Contact />
             </div>
           </div>
         </div>

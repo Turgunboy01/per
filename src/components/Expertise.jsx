@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
-const Expertise = ({ clickMoon }) => {
+const Expertise = () => {
+  const { clickMoon } = useContext(ThemeContext);
   return (
     <>
       <div className="border-b p-[30px] pt-[60px] pb-[43px]  grid grid-cols-2">

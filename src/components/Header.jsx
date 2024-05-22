@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BsArrowDown } from "react-icons/bs";
 import { RiGlobalLine } from "react-icons/ri";
 import { Logo } from "../../public/Svg";
+import { ThemeContext } from "../context/ThemeContext";
 
-const Header = ({ clickMoon }) => {
+const Header = () => {
+  const { clickMoon } = useContext(ThemeContext);
   return (
     <div
       className={` fixed  flex  z-40  ${
@@ -13,7 +15,7 @@ const Header = ({ clickMoon }) => {
       <div className="flex-[.2] p-6">
         <Logo color={clickMoon ? "#fff" : "#000"} />
       </div>
-      <div className="flex-[.597]">
+      <div className="flex-[.613]">
         <div className="flex justify-between gap-5">
           <div className="flex">
             <div
