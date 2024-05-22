@@ -40,11 +40,11 @@ const Home = () => {
           className={`fixed bottom-[100px] left-[50px] w-[60px] h-[30px]  bg-[#434345] px-1 py-1  rounded-full`}
         >
           <span
-            className={` rounded-full  bg-yellow-700 w-[20px]  h-[20px] absolute flex justify-center items-center ${
+            className={` rounded-full  bg-yellow-700 w-[25px]  h-[25px] absolute flex justify-center items-center ${
               clickMoon ? "right-1" : "top-1"
             } `}
           >
-            {clickMoon ? <FaRegMoon size={15} /> : <CiSun size={20} />}
+            {clickMoon ? <FaRegMoon size={20} /> : <CiSun size={30} />}
           </span>
         </div>
         <div className="border-t">
