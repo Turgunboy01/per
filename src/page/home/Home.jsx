@@ -9,6 +9,23 @@ import { marquee1 } from "../../../data";
 import { CiSun } from "react-icons/ci";
 import { FaRegMoon } from "react-icons/fa";
 import Contact from "../../components/Contact";
+import {
+  Best1,
+  Best10,
+  Best11,
+  Best12,
+  Best13,
+  Best14,
+  Best2,
+  Best3,
+  Best4,
+  Best5,
+  Best6,
+  Best7,
+  Best8,
+  Best9,
+} from "../../../public/Svg";
+import Marquee from "react-fast-marquee";
 
 const Home = () => {
   const [clickMoon, setClickMoon] = useState(false);
@@ -31,24 +48,47 @@ const Home = () => {
         <div className="border-t">
           <div className="w-[90%] border-l ml-auto">
             <KeyState clickMoon={clickMoon} />
-            <div className="border-b py-[30px]">
-              <marquee
-                loop
-                scrolldela="0.6s"
-                behavior="scroll"
-                scrollamount="15"
-              >
-                <div className="flex justify-between gap-[150px]">
-                  {marquee1.map((item, index) => (
-                    <img
-                      key={index}
-                      className="w-[200px]"
-                      src={item.img}
-                      alt="https://ventionteams.com/media/documents/paypal_RVc4KIP.svg"
-                    />
-                  ))}
+            <div className="border-b py-[30px] w-full">
+              <Marquee>
+                <div className=" flex items-center gap-[150px]">
+                  <div className="w-[300px]">
+                    <Best1 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best2 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best3 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best4 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best5 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best6 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best7 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best8 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best9 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best11 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best12 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best13 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
                 </div>
-              </marquee>
+              </Marquee>
             </div>
             <div className="flex justify-end p-[90px]  pt-[150px]  border-b items-end">
               <div className="w-[50%]">
@@ -124,23 +164,46 @@ const Home = () => {
             </div>
 
             <div className="border-b py-[30px]">
-              <marquee
-                loop
-                scrolldela="0.6s"
-                behavior="scroll"
-                scrollamount="15"
-              >
-                <div className="flex justify-between gap-[150px]">
-                  {marquee1.map((item, index) => (
-                    <img
-                      key={index}
-                      className="w-[200px]"
-                      src={item.img}
-                      alt="https://ventionteams.com/media/documents/paypal_RVc4KIP.svg"
-                    />
-                  ))}
+              <Marquee>
+                <div className=" flex items-center gap-[150px]">
+                  <div className="w-[300px]">
+                    <Best1 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best2 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best3 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best4 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best5 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best6 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best7 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best8 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best9 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best11 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best12 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
+                  <div className="w-[200px]">
+                    <Best13 best={clickMoon ? "#fff" : "#000"} />
+                  </div>
                 </div>
-              </marquee>
+              </Marquee>
             </div>
 
             {/* Recognized */}
@@ -162,7 +225,7 @@ const Home = () => {
                 companies by the industry’s most respected institutions.
               </p>
             </div>
-            <VentionImg />
+            <VentionImg clickMoon={clickMoon} />
             <div className="border-b  ">
               <Contact clickMoon={clickMoon} />
             </div>

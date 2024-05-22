@@ -1,34 +1,25 @@
 import React from "react";
+import {
+  Leader1,
+  Leader2,
+  Leader3,
+  Leader4,
+  Leader5,
+  Leader6,
+  Leader7,
+} from "../../public/Svg";
 
-const VentionImg = () => {
+const VentionImg = ({ clickMoon }) => {
   return (
     <div className="border-b p-[30px]">
       <div className="flex justify-between items-center">
-        <img
-          src="https://ventionteams.com/media/documents/inc5000.svg"
-          alt=""
-        />
-        <img
-          src="https://ventionteams.com/media/documents/financial_times.svg"
-          alt=""
-        />
-        <img
-          src="https://ventionteams.com/media/documents/award_aws_kWAIyp0.svg"
-          alt=""
-        />
-        <img
-          src="https://ventionteams.com/media/documents/The_Stevie_RgdSHUS.svg"
-          alt=""
-        />
-        <img
-          src="https://ventionteams.com/media/documents/Global_Business_Excellence_Awards.svg"
-          alt=""
-        />
-        <img src="https://ventionteams.com/media/documents/iaop.svg" alt="" />
-        <img
-          src="https://ventionteams.com/media/documents/gptw_greyscale.svg"
-          alt=""
-        />
+        <Leader1 leader={clickMoon ? "#828283" : "#333334"} />
+        <Leader2 leader={clickMoon ? "#949495" : "#2f2f2f"} />
+        <Leader3 leader={clickMoon ? "#949495" : "#454546"} />
+        <Leader4 leader={clickMoon ? "#949495" : "#353535"} />
+        <Leader5 leader={clickMoon ? "#949495" : "#353535"} />
+        <Leader6 leader={clickMoon ? "#949495" : "#2f2f2f"} />
+        <Leader7 leader={clickMoon ? "#949495" : "#2f2f2f"} />
       </div>
     </div>
   );

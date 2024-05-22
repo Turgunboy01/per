@@ -49,7 +49,7 @@ const Contact = ({ clickMoon }) => {
         ></textarea>
       </div>
       <div className="w-[30%] flex items-end">
-        <button className="w-full bg-[blue] text-[#fff] py-[60px] hover:bg-[#364674] hover:text-[#222] font-bold text-[20px]">
+        <button className="w-full bg-[blue] text-[#fff] py-[60px] hover:bg-[#53aafb] hover:text-[#222] font-bold text-[20px]">
           Send
         </button>
       </div>
